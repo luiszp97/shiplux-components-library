@@ -1,5 +1,6 @@
 import React, { HTMLProps, ReactNode } from "react"
 import { ButtonStyled } from "./Button.styled"
+import { Icon } from "../"
 
 export interface ButtonProps extends HTMLProps<HTMLButtonElement> {
 	type: "button" | "submit" | "reset"
@@ -41,9 +42,9 @@ export default function Button({
 			icon={icon}
 			{...props}
 		>
-			{icon && leftIcon && <img src={icon} width={widthIcon} height={heightIcon} />}
+			{icon && leftIcon && <Icon src={icon} width={widthIcon} height={heightIcon} />}
 			{children || lable}
-			{icon && rightIcon && <img src={icon} width={widthIcon} height={heightIcon} />}
+			{icon && rightIcon && <Icon src={icon} width={widthIcon} height={heightIcon} />}
 		</ButtonStyled>
 	)
 }
