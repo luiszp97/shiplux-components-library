@@ -1,14 +1,17 @@
 import styled, { css } from "styled-components"
 import { ButtonProps } from "./Button"
+import { genericStyles } from "../../utils"
 
 export const ButtonStyled = styled.button<ButtonProps>`
    background-color: ${props => props.backgroundColor};
    color: ${props => props.color || '#000'};
-   border-radius: 100px;
    font-size: 14px;
    font-weight: 500;
    cursor: pointer;
    border: none;
+   ${props => {
+      return genericStyles(props)
+   }};
    ${props => {
       return css`
          display: ${props.icon ? 'flex' : 'block'};

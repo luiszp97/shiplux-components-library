@@ -1,26 +1,27 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { IconButton } from '../components'
+import { Select } from '../components'
+
 
 const meta = {
-    title: 'Example/IconButton',
-    component: IconButton,
+    title: 'Example/Select',
+    component: Select,
     parameters: {
 
         layout: 'centered',
     },
-    tags: ['autodocs'],
+
     argTypes: {
 
     },
-} satisfies Meta<typeof IconButton>
+} satisfies Meta<typeof Select>
 
 export default meta
 type Story = StoryObj<typeof meta>
 
 export const Primary: Story = {
     args: {
-        icon: '/public/vite.svg',
-        variant: 'text',
+        defaultOption: 'This is a example',
+        children: []
     },
 };
 

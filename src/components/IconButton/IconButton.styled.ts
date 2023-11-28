@@ -1,13 +1,15 @@
 import styled, { css } from "styled-components"
 import { IconButtonProps } from "./IconButton"
+import { genericStyles } from "../../utils"
 
 export const IconButtonStyled = styled.button<IconButtonProps>`
     width: fit-content;
     padding: 8px;
-    border-radius: ${props => props.rounded ? props.rounded : "4px"};
     cursor: pointer;
-    background-color: ${props => props.color};
     border: 1px solid transparent;
+    ${props => {
+        return genericStyles(props)
+    }};
     ${props => {
         switch (props.variant) {
             case 'contained':

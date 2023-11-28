@@ -1,9 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { IconButton } from '../components'
+import { ShipDateCard } from '../components'
+
 
 const meta = {
-    title: 'Example/IconButton',
-    component: IconButton,
+    title: 'Example/ShipDateCard',
+    component: ShipDateCard,
     parameters: {
 
         layout: 'centered',
@@ -12,15 +13,16 @@ const meta = {
     argTypes: {
 
     },
-} satisfies Meta<typeof IconButton>
+} satisfies Meta<typeof ShipDateCard>
 
 export default meta
 type Story = StoryObj<typeof meta>
 
 export const Primary: Story = {
     args: {
-        icon: '/public/vite.svg',
-        variant: 'text',
+        price: 0,
+        deliveryDates: '28 - 30 Mar',
+        originDates: '26 - 28 Mar'
     },
 };
 

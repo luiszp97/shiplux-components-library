@@ -1,4 +1,5 @@
 import React, { FC } from "react"
+import { StyledSvg } from "./ShipluxLogo.styled"
 
 interface ShipluxLogoProps {
 	color?: string
@@ -6,9 +7,10 @@ interface ShipluxLogoProps {
 	height?: string
 }
 
-export default function ShipluxLogo({ color, width, height }: ShipluxLogoProps) {
+export default function ShipluxLogo({ color, width, height, ...props }: ShipluxLogoProps) {
 	return (
-		<svg
+		<StyledSvg
+			{...props}
 			width={width ? width : "120"}
 			height={height ? height : "26"}
 			viewBox="0 0 120 26"
@@ -49,6 +51,6 @@ export default function ShipluxLogo({ color, width, height }: ShipluxLogoProps) 
 				d="M115.71 12.5302L120 19.2398H116.891L114.023 14.7427L111.324 19.2398H108.456L112.746 12.7226L108.456 5.989H111.565L114.433 10.4861L117.132 5.989H120L115.71 12.5302Z"
 				fill={color ? color : "#001D32"}
 			/>
-		</svg>
+		</StyledSvg>
 	)
 }

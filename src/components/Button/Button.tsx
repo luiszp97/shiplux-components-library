@@ -1,26 +1,25 @@
 import React, { HTMLProps, ReactNode } from "react"
 import { ButtonStyled } from "./Button.styled"
 import { Icon } from "../"
+import { GenericProps } from "../../types"
 
-export interface ButtonProps extends HTMLProps<HTMLButtonElement> {
+export interface ButtonProps extends GenericProps, HTMLProps<HTMLButtonElement> {
 	type: "button" | "submit" | "reset"
 	sizes?: "small" | "medium" | "large"
 	variant?: "contained" | "outline" | "text"
-	backgroundColor?: string
 	children?: ReactNode
 	lable?: string
-	color?: string
 	icon?: string
 	rightIcon?: boolean
 	leftIcon?: boolean
 	widthIcon?: number
 	heightIcon?: number
+	className?: string
 }
 
 export default function Button({
 	sizes = "medium",
 	type = "button",
-	backgroundColor = "#6750A4",
 	children,
 	lable,
 	variant,
@@ -29,16 +28,17 @@ export default function Button({
 	icon,
 	widthIcon = 18,
 	heightIcon = 18,
-	color = "#000",
+	className,
+	rounded,
 	...props
 }: ButtonProps) {
 	return (
 		<ButtonStyled
+			className={className && className}
 			variant={variant}
-			backgroundColor={backgroundColor}
-			color={color}
 			type={type}
 			sizes={sizes}
+			rounded={rounded || 100}
 			icon={icon}
 			{...props}
 		>

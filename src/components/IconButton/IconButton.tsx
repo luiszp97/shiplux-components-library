@@ -1,15 +1,14 @@
 import React, { HTMLProps } from "react"
 import Icon from "../Icon/Icon"
 import { IconButtonStyled } from "./IconButton.styled"
+import { GenericProps } from "../../types"
 
-export interface IconButtonProps extends HTMLProps<HTMLButtonElement> {
+export interface IconButtonProps extends GenericProps, HTMLProps<HTMLButtonElement> {
 	variant?: "contained" | "outline" | "text"
 	icon: string
 	widthIcon?: number
 	heightIcon?: number
-	rounded?: string
 	className?: string
-	color?: string
 	href?: string
 }
 
@@ -18,13 +17,18 @@ export default function IconButton({
 	widthIcon,
 	heightIcon,
 	className,
-	color,
 	rounded,
 	variant,
 	...props
 }: IconButtonProps) {
 	return (
-		<IconButtonStyled {...props} icon={icon} variant={variant}>
+		<IconButtonStyled
+			{...props}
+			rounded={rounded || 4}
+			className={className && className}
+			icon={icon}
+			variant={variant}
+		>
 			<Icon src={icon} width={widthIcon} height={heightIcon} />
 		</IconButtonStyled>
 	)
