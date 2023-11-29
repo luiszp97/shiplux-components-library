@@ -13,7 +13,7 @@ export const genericStyles = (props: GenericProps) => {
         margin: ${props.margin && `${props.margin}px`};
         padding: ${props.padding && `${props.padding}px`};
         position: ${props.position};
-        border-radius: ${props.rounded && `${props.rounded}px`};
+        border-radius: ${typeof (props.rounded) === 'number' ? `${props.rounded}px` : props.rounded};
         margin-top: ${props.marginTop ? `${props.marginTop}px` : props.marginY && `${props.marginY}px`};
         margin-left: ${props.marginLeft ? `${props.marginLeft}px` : props.marginX && `${props.marginX}px`};
         margin-bottom: ${props.marginBottom ? `${props.marginBottom}px` : props.marginY && `${props.marginY}px`};
@@ -43,6 +43,8 @@ export const genericStyles = (props: GenericProps) => {
         min-height: ${typeof (props.minHeight) === 'number' ? `${props.minHeight}px` : props.minHeight};
         max-height: ${typeof (props.maxHeight) === 'number' ? `${props.maxHeight}px` : props.maxHeight};
         font-size: ${props.fontSize && `${props.fontSize}px`};
+        transform: translateX(${props.translateX});
+        transform: translateY(${props.translateY});
         // responsive de
         ${() => {
             let mediaQuery

@@ -25,7 +25,7 @@ export interface GenericProps {
     paddingTop?: number
     position?: 'absolute' | 'relative' | 'static'
     right?: number
-    rounded?: number
+    rounded?: number | string
     top?: number
     border?: string
     borderColor?: string
@@ -50,5 +50,7 @@ export interface GenericProps {
     maxHeight?: number | string
     zIndex?: number
     fontSize?: number
+    translateX?: string
+    translateY?: string
 
 }

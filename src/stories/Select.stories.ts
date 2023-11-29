@@ -10,6 +10,7 @@ const meta = {
         layout: 'centered',
     },
 
+    tags: ['autodocs'],
     argTypes: {
 
     },

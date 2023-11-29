@@ -1,30 +1,27 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { CheckInput } from '../components'
+import { LoaderSpinner } from '../components'
 
 
 const meta = {
-    title: 'Example/CheckInput',
-    component: CheckInput,
+    title: 'Example/LoaderSpinner',
+    component: LoaderSpinner,
     parameters: {
 
         layout: 'centered',
     },
     tags: ['autodocs'],
-
     argTypes: {
 
     },
-} satisfies Meta<typeof CheckInput>
+} satisfies Meta<typeof LoaderSpinner>
 
 export default meta
 type Story = StoryObj<typeof meta>
 
 export const Primary: Story = {
     args: {
-        icon: '/public/van.svg',
-        label: 'Suv',
-        primary: true,
-        direction: 'column',
+        color: 'blue',
+        isSpinner: true
     },
 };
 
