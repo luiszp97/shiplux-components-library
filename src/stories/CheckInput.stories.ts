@@ -3,7 +3,7 @@ import { CheckInput } from '../components'
 
 
 const meta = {
-    title: 'Example/CheckInput',
+    title: 'Forms/CheckInput',
     component: CheckInput,
     parameters: {
 

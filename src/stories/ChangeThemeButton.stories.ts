@@ -3,7 +3,7 @@ import { ChangeThemeButton } from '../components'
 
 
 const meta = {
-    title: 'Example/ChangeThemeButton',
+    title: 'Buttons/ChangeThemeButton',
     component: ChangeThemeButton,
     parameters: {
 
@@ -23,6 +23,4 @@ export const Primary: Story = {
         darkIcon: 'https://www.shiplux.com/_next/static/media/keyboard_arrow_right.99c4df12.svg',
         lightIcon: 'https://www.shiplux.com/_next/static/media/keyboard_arrow_right.99c4df12.svg'
     },
-};
-
-
+}

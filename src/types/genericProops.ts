@@ -52,5 +52,6 @@ export interface GenericProps {
     fontSize?: number
     translateX?: string
     translateY?: string
+    opacity?: number
 
 }

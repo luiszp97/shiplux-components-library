@@ -3,7 +3,7 @@ import { ShipDateCard } from '../components'
 
 
 const meta = {
-    title: 'Example/ShipDateCard',
+    title: 'Cards/ShipDateCard',
     component: ShipDateCard,
     parameters: {
 

@@ -3,7 +3,7 @@ import { Headering } from '../components'
 
 
 const meta = {
-    title: 'Example/Headering',
+    title: 'Text/Headering',
     component: Headering,
     parameters: {
 

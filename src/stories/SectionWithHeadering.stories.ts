@@ -3,7 +3,7 @@ import { SectionWithHeadering } from '../components'
 
 
 const meta = {
-    title: 'Example/SectionWithHeadering',
+    title: 'Sections/SectionWithHeadering',
     component: SectionWithHeadering,
     parameters: {
 

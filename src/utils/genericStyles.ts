@@ -6,7 +6,7 @@ export const genericStyles = (props: GenericProps) => {
         align-items: ${props.alignItems};
         background-color: ${props.backgroundColor};
         color: ${props.color};
-        flex-direction: ${props.flexDirection || 'row'};
+        flex-direction: ${props.flexDirection};
         flex-wrap: ${props.flexWrap};
         gap: ${props.gap && `${props.gap}px`};
         justify-content: ${props.justifyContent};
@@ -45,6 +45,7 @@ export const genericStyles = (props: GenericProps) => {
         font-size: ${props.fontSize && `${props.fontSize}px`};
         transform: ${props.translateX && `translateX(${props.translateX})`};
         transform:  ${props.translateY && `translateX(${props.translateY})`};
+        opacity: ${props.opacity};
         // responsive de
         ${() => {
             let mediaQuery

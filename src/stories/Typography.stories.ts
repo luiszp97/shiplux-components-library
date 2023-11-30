@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Typography } from '../components'
 
 const meta = {
-    title: 'Example/Typography',
+    title: 'Text/Typography',
     component: Typography,
     parameters: {
         layout: 'centered',
@@ -17,7 +17,7 @@ type Story = StoryObj<typeof meta>
 export const Primary: Story = {
     args: {
         variant: 'h1',
-        children: 'hola',
+        children: 'Example text',
         align: 'center',
     },
 };

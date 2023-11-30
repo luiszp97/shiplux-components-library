@@ -3,7 +3,7 @@ import { Select } from '../components'
 
 
 const meta = {
-    title: 'Example/Select',
+    title: 'Forms/Select',
     component: Select,
     parameters: {
 

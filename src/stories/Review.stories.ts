@@ -3,7 +3,7 @@ import { ReviewCard } from '../components'
 
 
 const meta = {
-    title: 'Example/ReviewCard',
+    title: 'Cards/ReviewCard',
     component: ReviewCard,
     parameters: {
 

@@ -3,7 +3,7 @@ import { Input } from '../components'
 
 
 const meta = {
-    title: 'Example/Input',
+    title: 'Forms/Input',
     component: Input,
     parameters: {
 

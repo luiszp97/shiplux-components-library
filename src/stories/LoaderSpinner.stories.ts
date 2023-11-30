@@ -3,7 +3,7 @@ import { LoaderSpinner } from '../components'
 
 
 const meta = {
-    title: 'Example/LoaderSpinner',
+    title: 'utils/LoaderSpinner',
     component: LoaderSpinner,
     parameters: {
 

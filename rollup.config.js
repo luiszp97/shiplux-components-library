@@ -32,10 +32,6 @@ export default [
         ],
         external: ["react", "react-dom", "main.css"],
     },
-    // {
-    //     input: "dist/esm/types/index.d.ts",
-    //     output: [{ file: "dist/index.d.ts", format: "esm" }],
-    //   },
     {
         input: "dist/esm/types/index.d.ts",
         output: [{ file: "dist/index.d.ts", format: "esm" }],

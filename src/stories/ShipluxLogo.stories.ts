@@ -3,7 +3,7 @@ import { ShipluxLogo } from '../components'
 
 
 const meta = {
-    title: 'Example/ShipluxLogo',
+    title: 'SVG/ShipluxLogo',
     component: ShipluxLogo,
     parameters: {
 

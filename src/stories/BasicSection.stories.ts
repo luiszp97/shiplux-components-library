@@ -3,7 +3,7 @@ import { BasicSection } from '../components'
 
 
 const meta = {
-    title: 'Example/BasicSection',
+    title: 'Sections/BasicSection',
     component: BasicSection,
     parameters: {
 
