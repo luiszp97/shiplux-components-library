@@ -1,7 +1,7 @@
 import React, { HTMLProps, ReactNode } from "react"
 import { GenericProps } from "../../types"
 import { StyledSelect } from "./Select.styled"
-import { Box, Label } from "../"
+import { Box, Flex, Label } from "../"
 
 export interface SelectProps extends GenericProps, HTMLProps<HTMLSelectElement> {
 	className?: string
@@ -24,7 +24,12 @@ export default function Select({
 	...props
 }: SelectProps) {
 	return (
-		<Box className={containerStyles && containerStyles}>
+		<Flex
+			flexDirection="column"
+			gap={16}
+			position={absoluteLabel ? "relative" : "static"}
+			className={containerStyles && containerStyles}
+		>
 			{label && (
 				<Label
 					absoluteLabel={absoluteLabel}
@@ -66,6 +71,6 @@ export default function Select({
 					</option>
 				))}
 			</StyledSelect>
-		</Box>
+		</Flex>
 	)
 }

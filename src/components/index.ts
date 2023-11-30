@@ -1,4 +1,3 @@
-
 export { default as Box } from './Box'
 export { default as Button } from './Button'
 export { default as ChangeThemeButton } from './ChangeThemeButton'
@@ -15,3 +14,6 @@ export { default as ShipDateCard } from './ShipDateCard'
 export { default as ShipluxLogo } from './ShipluxLogo'
 export { default as Typography } from './Typography'
 export { default as LoaderSpinner } from './LoaderSpinner'
+export { default as Headering } from './Headering'
+export { default as SectionWithHeadering } from './SectionWithHeadering'
+export { default as BasicSection } from './BasicSection'

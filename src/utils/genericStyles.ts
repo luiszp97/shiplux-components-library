@@ -43,8 +43,8 @@ export const genericStyles = (props: GenericProps) => {
         min-height: ${typeof (props.minHeight) === 'number' ? `${props.minHeight}px` : props.minHeight};
         max-height: ${typeof (props.maxHeight) === 'number' ? `${props.maxHeight}px` : props.maxHeight};
         font-size: ${props.fontSize && `${props.fontSize}px`};
-        transform: translateX(${props.translateX});
-        transform: translateY(${props.translateY});
+        transform: ${props.translateX && `translateX(${props.translateX})`};
+        transform:  ${props.translateY && `translateX(${props.translateY})`};
         // responsive de
         ${() => {
             let mediaQuery
